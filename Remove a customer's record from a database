@@ -1,0 +1,3 @@
+SELECT * FROM Customers WHERE FirstName='Taylor' AND LastName='Jenkins';
+
+DELETE FROM Customers WHERE CustomerID='4'
