@@ -1,0 +1,10 @@
+SELECT COUNT(Orders.OrderID) AS OrderCount, 
+Customers.FirstName,
+Customers.LastName,
+Customers.Email 
+FROM Orders
+JOIN Customers 
+ON Orders.CustomerID=Customer.ID
+GROUP BY Orders.CustomerID
+ORDER BY OrderCount DESC
+LIMIT 5;
