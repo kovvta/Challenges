@@ -1,0 +1,8 @@
+SELECT DishID FROM Dishes WHERE Name='Quinoa Salmon Salad';
+
+SELECT * FROM Customers WHERE FirstName='Cleo' AND LastName='Goldwater';
+
+UPDATE Customers SET FavouriteDish='9' WHERE CustomerID='42';
+
+SELECT Customers.FirstName, Customers.LastName, Customers.FavouriteDish, Dishes.Name FROM Customers
+JOIN Dishes ON Customers.FavouriteDish=Dishes.DishID
