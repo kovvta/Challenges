@@ -1,0 +1,5 @@
+SELECT * FROM Dishes ORDER BY Price;
+
+SELECT * FROM Dishes WHERE Type='Appetizer' OR Type='Beverage' ORDER BY Type;
+
+SELECT * FROM Dishes WHERE Type!='Beverage' ORDER BY Type;
