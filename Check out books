@@ -1,0 +1,19 @@
+INSERT INTO Loans
+(BookID, PatronID, LoanDate, ReturnDate)
+VALUES
+((SELECT BookID FROM Books WHERE Barcode='2855934983'),
+(SELECT PatronID FROM Patrons WHERE Email='jvaan@wisdompets.com'),
+'2020-08-25',
+'2020-09-08');
+
+INSERT INTO Loans
+(BookID, PatronID, LoanDate, ReturnDate)
+VALUES
+((SELECT BookID FROM Books WHERE Barcode='4043822646'),
+(SELECT PatronID FROM Patrons WHERE Email='jvaan@wisdompets.com'),
+'2020-08-25',
+'2020-09-08');
+
+
+
+
