@@ -1,0 +1,6 @@
+SELECT COUNT(Loans.LoanID) AS LoanCount, Patrons.FirstName, Patrons.LastName, Patrons.Email 
+FROM Loans
+JOIN Patrons ON Loans.PatronID=Patrons.PatronID
+GROUP BY Loans.PatronID 
+ORDER BY LoanCount ASC
+LIMIT 10;
