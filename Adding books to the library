@@ -1,0 +1,5 @@
+INSERT INTO Books
+(Title, Author, Year, BookID) 
+VALUES 
+('Dracula', 'Bram Stoker', '1897', '4819277482'),
+('Gulliver's Travels', 'Jonathan Swift', '1729', '4899254401');
