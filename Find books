@@ -1,0 +1,5 @@
+SELECT Books.Title, Books.BookID, Books.Author, Books.Published FROM Books
+JOIN Loans ON Books.BookID=Loans.BookID
+WHERE Books.Published>1889 AND Books.Published<1900 AND Loans.ReturnedDate IS NOT NULL
+GROUP BY Books.BookID
+ORDER BY Books.Title;
