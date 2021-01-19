@@ -1,0 +1,10 @@
+SELECT YearPublished, COUNT(DISTINCT(Title)) AS TitleCount FROM Books
+GROUP BY YearPublished
+ORDER BY TitleCount DESC;
+
+SELECT COUNT(Loans.LoanID) as LoanCount, Books.Title,
+FROM Loans
+JOIN Books ON Loans.BookID=Books.BookID
+GROUP BY Books.Title
+ORDER BY LoanCount DESC
+LIMIT 5;
