@@ -5,7 +5,7 @@ def favourite_city(name):
     elif name=="Nottingham":
         print("Sorry!Try again")
     else:
-        print("Nice try! One of my favourite cities is","London")
+        print("Nice try! One of my favourite cities is", name)
 
     
 
