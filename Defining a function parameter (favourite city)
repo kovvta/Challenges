@@ -1,0 +1,13 @@
+def favourite_city(name):
+
+    if name=="London":
+        print("You're absolutely right!")
+    elif name=="Nottingham":
+        print("Sorry!Try again")
+    else:
+        print("Nice try! One of my favourite cities is","London")
+
+    
+
+
+favourite_city("London")
