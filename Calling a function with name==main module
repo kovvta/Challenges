@@ -1,0 +1,7 @@
+def main():
+    Moderator()
+
+def Moderator():
+    print('Please wait for further instructions...')
+
+if __name__ == '__main__': main()
